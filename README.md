@@ -72,3 +72,12 @@ Please add sources, issue reproductions, test decks, render comparisons, and ben
 ## License
 
 Research text and original materials are licensed under the MIT License unless otherwise stated. External assets and quoted materials retain their respective licenses and attribution requirements.
+
+## Ten-skill research
+
+14. [Ten presentation and image skill reviews](research/15-skill-reviews/README.md)
+15. [Side-by-side comparison of all ten](research/16-ten-skill-comparison.md)
+16. [Recommended hybrid: what we should adopt](research/17-our-recommended-hybrid.md)
+17. [External skill source register](research/18-skill-source-register.md)
+
+These reviews are documentation-based as of 2026-11-21, not controlled output benchmarks. Read the limitations before treating any conditional winner as objectively best.
