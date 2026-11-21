@@ -1,0 +1,13 @@
+{
+  "name": "legend-level-ppt",
+  "version": "1.0.0",
+  "description": "Deterministic PowerPoint engineering for AI agents: native OOXML objects, in-place reference deck editing, and visual QA.",
+  "author": {
+    "name": "Ranjith S",
+    "url": "https://github.com/ranjiths112007"
+  },
+  "homepage": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+  "repository": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+  "license": "MIT",
+  "skills": "./skills/"
+}
