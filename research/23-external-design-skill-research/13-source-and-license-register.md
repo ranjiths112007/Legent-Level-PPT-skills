@@ -46,3 +46,25 @@ Before a new release:
 3. Recheck the root and relevant subdirectory licenses.
 4. Compare skill inventories and inspect changed files.
 5. Update the research snapshot date and note material changes.
+
+
+## Third-batch motion repositories
+
+| Source repository | Pinned commit | Root license recorded | Research file |
+|---|---|---|---|
+| [greensock/gsap-skills](https://github.com/greensock/gsap-skills/tree/aed9cfd3277740755f6bfc1155c7aa645403b760) | `aed9cfd3277740755f6bfc1155c7aa645403b760` | MIT | [19](19-gsap-skills.md) |
+| [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/6f55706d1069e512430582ad86e4e57dc07afe1b) | `6f55706d1069e512430582ad86e4e57dc07afe1b` | No standalone root license found; underlying Remotion runtime uses proprietary Remotion License | [20](20-remotion-skills.md) |
+| [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill/tree/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb) | `d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb` | MIT | [21](21-lottiefiles-motion-design-skill.md) |
+| [iart-ai/motion-skills](https://github.com/iart-ai/motion-skills/tree/e8ba1f4eb2bcca3d1639d7545b9cd2bcfe4a3c6f) | `e8ba1f4eb2bcca3d1639d7545b9cd2bcfe4a3c6f` | MIT | [22](22-iart-motion-skills.md) |
+| [C-Jeril/framer-motion-skills](https://github.com/C-Jeril/framer-motion-skills/tree/837d7268fc4a3cf5b1f8904616ec97c7485e3eda) | `837d7268fc4a3cf5b1f8904616ec97c7485e3eda` | MIT | [23](23-framer-motion-skills.md) |
+| [frankxai/awesome-motion-design-agent-skills](https://github.com/frankxai/awesome-motion-design-agent-skills/tree/e7dc6e2e728c918ffcea5edb2d7c94e2a6f7785d) | `e7dc6e2e728c918ffcea5edb2d7c94e2a6f7785d` | CC0-1.0 | [24](24-awesome-motion-design-agent-skills.md) |
+
+### Linked iArt packs inspected
+
+| Repository | Pinned commit | License recorded | Skills |
+|---|---|---|---:|
+| [iart-ai/data-animation-skills](https://github.com/iart-ai/data-animation-skills/tree/6570c0c4fbc9daa8d7ac1f1163a890352344206b) | `6570c0c4fbc9daa8d7ac1f1163a890352344206b` | MIT | 3 |
+| [iart-ai/motion-design-skills](https://github.com/iart-ai/motion-design-skills/tree/b85e50c4cef5ff17aa2187a10d49d2dae9226c74) | `b85e50c4cef5ff17aa2187a10d49d2dae9226c74` | MIT | 9 |
+| [iart-ai/explainer-video-skills](https://github.com/iart-ai/explainer-video-skills/tree/3c13a1bc360c08503f24f9c9a99fda6d3d35de56) | `3c13a1bc360c08503f24f9c9a99fda6d3d35de56` | MIT | 5 |
+
+The iArt hub's MIT license does not convert third-party provider terms or linked service licensing into MIT. Likewise, CC0 applies to the FrankX catalogue's own material, not the external projects it lists. Remotion's runtime is separately licensed; review official terms and pricing before bundling or commercial use.
