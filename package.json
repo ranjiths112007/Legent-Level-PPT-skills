@@ -1,0 +1,45 @@
+{
+  "name": "@ranjiths/legend-level-ppt-skills",
+  "version": "1.0.0",
+  "description": "Enterprise-grade, deterministic PowerPoint engineering for AI agents. Native OOXML objects, in-place reference deck editing, visual QA linting, and design-token systems.",
+  "keywords": [
+    "powerpoint",
+    "presentation",
+    "pptx",
+    "ai-agent",
+    "claude-plugin",
+    "codex-plugin",
+    "opencode-plugin",
+    "cursor-rules",
+    "agent-skills",
+    "ooxml"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Ranjith S",
+    "url": "https://github.com/ranjiths112007"
+  },
+  "homepage": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjiths112007/Legent-Level-PPT-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ranjiths112007/Legent-Level-PPT-skills/issues"
+  },
+  "main": "skills/legend-ppt/SKILL.md",
+  "files": [
+    "AGENTS.md",
+    "skills/",
+    "schemas/",
+    "research/",
+    ".cursor/",
+    ".clinerules/",
+    ".github/",
+    ".claude-plugin/",
+    ".codex-plugin/",
+    ".opencode/",
+    "LICENSE",
+    "README.md"
+  ]
+}
