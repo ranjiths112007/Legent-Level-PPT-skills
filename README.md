@@ -107,3 +107,14 @@ This research separates Claude for PowerPoint, Claude Slides, Claude Design and 
 27. [Source and license register](research/23-external-design-skill-research/13-source-and-license-register.md)
 
 The handbook examines nine pinned design-skill repositories, inventories 807 `SKILL.md` paths, and separates transferable design workflows from web-only or non-native-PowerPoint implementations.
+
+
+### Additional presentation-engine research
+
+- [PPT Master deep dive](research/23-external-design-skill-research/14-ppt-master.md)
+- [Frontend Slides deep dive](research/23-external-design-skill-research/15-frontend-slides.md)
+- [PPT Agent Skill deep dive](research/23-external-design-skill-research/16-ppt-agent-skill.md)
+- [Slides AI Plugin deep dive](research/23-external-design-skill-research/17-slides-ai-plugin.md)
+- [Four-repository comparative synthesis](research/23-external-design-skill-research/18-four-repo-comparative-synthesis.md)
+
+The external repository handbook now covers 13 repositories in total.
