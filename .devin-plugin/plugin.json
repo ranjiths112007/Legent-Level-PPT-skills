@@ -1,0 +1,9 @@
+{
+  "name": "legend-level-ppt",
+  "version": "1.0.0",
+  "description": "Deterministic PowerPoint engineering for AI agents with native OOXML objects, template preservation, and visual QA.",
+  "author": {
+    "name": "Ranjith S"
+  },
+  "skills": "./skills/"
+}
