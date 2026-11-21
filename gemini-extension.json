@@ -1,0 +1,6 @@
+{
+  "name": "legend-level-ppt",
+  "version": "1.0.0",
+  "description": "Deterministic PowerPoint engineering for AI agents with native OOXML editing and visual QA.",
+  "contextFileName": "AGENTS.md"
+}
