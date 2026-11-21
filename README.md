@@ -1,10 +1,38 @@
 # Legend-Level PPT Skills
 
-**Research-first, open-source knowledge base for building reliable AI presentation skills.**
+**Deterministic, research-grounded PowerPoint engineering plugin & skills for AI agents.**
 
-This repository documents the full presentation-engineering problem space: user pain points, presentation design, narrative, typography, color, image generation, PowerPoint objects, PPTX internals, rendering, accessibility, validation, repair, agent-skill design, competitor analysis, and evaluation.
+Compatible across **Claude Code**, **OpenAI Codex**, **Cursor**, **Cline**, **OpenCode**, **OpenClaw**, **Devin**, and **Gemini CLI**.
 
-> **Current status: Research foundation / planning.** This repository is not yet a finished presentation-generation skill. It is a structured research handbook intended to guide evidence-based implementation.
+This repository combines a comprehensive 55-source research handbook with executable agent skills for creating, surgically editing, inspecting, and repairing native Microsoft PowerPoint (`.pptx`) presentations.
+
+> **Current status: Production-Ready Multi-Agent Skills & Research Knowledge Base.**
+
+---
+
+## ⚡ Quick Start: Multi-Agent Installation
+
+| Environment | Installation / Usage |
+|---|---|
+| **Claude Code** | Load via `.claude-plugin/plugin.json` or add repository URL to plugins |
+| **OpenAI Codex** | Loaded via `.codex-plugin/plugin.json` and `.agents/rules/` |
+| **Cursor** | Native rules active in `.cursor/rules/legend-ppt.mdc` |
+| **Cline / Roo Code** | Governed by `.clinerules/legend-ppt.md` |
+| **OpenCode** | Supports native commands in `.opencode/command/` (`/legend-ppt`, `/legend-ppt-edit`) |
+| **OpenClaw** | Skills auto-discovered in `.openclaw/skills/` |
+| **Gemini CLI / Antigravity** | Defined via `gemini-extension.json` and `plugin.json` |
+
+---
+
+## 🛠️ The 5 Core Runnable Skills
+
+1. **[`/legend-ppt`](skills/legend-ppt/SKILL.md):** Complete end-to-end presentation authoring from outlines or documents. Enforces action titles, design-system tokens, and native OOXML charts/tables.
+2. **[`/legend-ppt-edit`](skills/legend-ppt-edit/SKILL.md):** Surgical, in-place reference deck editing. Updates numbers, dates, or slides while preserving 100% of masters, custom fonts, layouts, and untouched slides.
+3. **[`/legend-ppt-qa`](skills/legend-ppt-qa/SKILL.md):** Automated visual linting and repair. Detects bounding-box text clipping, object collisions, low contrast, and unapproved fonts.
+4. **[`/legend-ppt-audit`](skills/legend-ppt-audit/SKILL.md):** Deep audit of any `.pptx` file. Extracts color palettes and font scales, scores accessibility, and identifies bloat.
+5. **[`/legend-ppt-motion`](skills/legend-ppt-motion/SKILL.md):** Motion and kinetic presentation choreography using GSAP, Remotion, and kinetic typography.
+
+---
 
 ## Mission
 
