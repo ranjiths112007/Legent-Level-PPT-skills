@@ -117,7 +117,7 @@ The design-skill handbook inventories 807 `SKILL.md` paths across the first nine
 - [Slides AI Plugin deep dive](research/23-external-design-skill-research/17-slides-ai-plugin.md)
 - [Four-repository comparative synthesis](research/23-external-design-skill-research/18-four-repo-comparative-synthesis.md)
 
-The external repository handbook now covers 13 repositories in total.
+The external repository handbook now covers 19 repositories in total.
 
 
 ### Motion design and video research
