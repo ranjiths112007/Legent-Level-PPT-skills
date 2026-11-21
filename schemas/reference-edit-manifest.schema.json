@@ -1,0 +1,635 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ranjiths112007/Legent-Level-PPT-skills/blob/main/schemas/reference-edit-manifest.schema.json",
+  "title": "Reference Deck Edit Manifest",
+  "description": "Validated plan of the exact objects and data to change in a source PowerPoint, plus preservation and QA requirements.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_version",
+    "job_id",
+    "mode",
+    "source",
+    "output",
+    "preservation",
+    "changes"
+  ],
+  "properties": {
+    "manifest_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "exact_content_replacement",
+        "same_design_new_content",
+        "same_structure_new_data",
+        "reference_guided_new_deck",
+        "partial_edit",
+        "visual_reference_reconstruction"
+      ]
+    },
+    "source": {
+      "$ref": "#/$defs/file"
+    },
+    "output": {
+      "$ref": "#/$defs/file"
+    },
+    "preservation": {
+      "$ref": "#/$defs/preservation"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "slide_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        },
+        "preserve_slide_count": {
+          "type": "boolean"
+        },
+        "preserve_slide_order": {
+          "type": "boolean"
+        },
+        "preserve_slide_size": {
+          "type": "boolean"
+        },
+        "preserve_theme": {
+          "type": "boolean"
+        },
+        "preserve_masters_and_layouts": {
+          "type": "boolean"
+        }
+      }
+    },
+    "content_sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contentSource"
+      }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/change"
+      }
+    },
+    "untouched": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/untouched"
+      }
+    },
+    "approval_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "qa_requirements": {
+      "$ref": "#/$defs/qa"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "pptx",
+            "potx",
+            "ppt",
+            "pdf",
+            "png",
+            "jpg",
+            "jpeg",
+            "xlsx",
+            "csv",
+            "docx",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_read_only",
+        "write_to_new_file",
+        "preserve_object_types",
+        "preserve_geometry"
+      ],
+      "properties": {
+        "source_read_only": {
+          "type": "boolean",
+          "const": true
+        },
+        "write_to_new_file": {
+          "type": "boolean",
+          "const": true
+        },
+        "preserve_object_types": {
+          "type": "boolean"
+        },
+        "preserve_geometry": {
+          "type": "boolean"
+        },
+        "preserve_run_formatting": {
+          "type": "boolean"
+        },
+        "preserve_chart_styling": {
+          "type": "boolean"
+        },
+        "preserve_image_crop": {
+          "type": "boolean"
+        },
+        "preserve_hyperlinks": {
+          "type": "boolean"
+        },
+        "preserve_notes": {
+          "type": "boolean"
+        },
+        "preserve_hidden_slides": {
+          "type": "boolean"
+        },
+        "preserve_animations_and_transitions": {
+          "type": "boolean"
+        },
+        "preserve_external_links_without_refresh": {
+          "type": "boolean"
+        },
+        "allow_flattening": {
+          "type": "boolean",
+          "default": false
+        },
+        "allow_new_slides": {
+          "type": "boolean",
+          "default": false
+        },
+        "minimum_font_size_pt": {
+          "type": "number",
+          "minimum": 1
+        }
+      }
+    },
+    "contentSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "path",
+        "kind"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "chat",
+            "xlsx",
+            "csv",
+            "docx",
+            "pdf",
+            "pptx",
+            "url",
+            "other"
+          ]
+        },
+        "sheet_or_page": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      }
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slide_index",
+        "object_type"
+      ],
+      "properties": {
+        "slide_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "slide_part": {
+          "type": "string"
+        },
+        "shape_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "shape_name": {
+          "type": "string"
+        },
+        "object_type": {
+          "type": "string",
+          "enum": [
+            "text_box",
+            "placeholder",
+            "picture",
+            "table",
+            "chart",
+            "group",
+            "shape",
+            "connector",
+            "smartart",
+            "media",
+            "unknown"
+          ]
+        },
+        "placeholder_type": {
+          "type": "string"
+        },
+        "placeholder_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text_fingerprint": {
+          "type": "string"
+        },
+        "expected_bounds_emu": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "x",
+            "y",
+            "width",
+            "height"
+          ],
+          "properties": {
+            "x": {
+              "type": "integer"
+            },
+            "y": {
+              "type": "integer"
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "relationship_id": {
+          "type": "string"
+        }
+      }
+    },
+    "change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "change_id",
+        "locator",
+        "operation",
+        "confidence",
+        "evidence",
+        "approval_required"
+      ],
+      "properties": {
+        "change_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "operation": {
+          "type": "string",
+          "enum": [
+            "replace_text",
+            "replace_picture",
+            "update_table",
+            "update_chart",
+            "update_shape_property",
+            "replace_object",
+            "add_slide",
+            "remove_slide",
+            "derived_callout",
+            "manual_review"
+          ]
+        },
+        "target_text": {
+          "type": "string"
+        },
+        "source_key": {
+          "type": "string"
+        },
+        "content_source_id": {
+          "type": "string"
+        },
+        "table_cell_updates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "row",
+              "column",
+              "value"
+            ],
+            "properties": {
+              "row": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "column": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "value": {}
+            }
+          }
+        },
+        "chart_data": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "categories": {
+              "type": "array",
+              "items": {
+                "type": [
+                  "string",
+                  "number"
+                ]
+              }
+            },
+            "series": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name",
+                  "values"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "number_format": {
+              "type": "string"
+            },
+            "unit": {
+              "type": "string"
+            }
+          }
+        },
+        "asset_path": {
+          "type": "string"
+        },
+        "preserve_run_formatting": {
+          "type": "boolean"
+        },
+        "preserve_geometry": {
+          "type": "boolean"
+        },
+        "preserve_chart_style": {
+          "type": "boolean"
+        },
+        "preserve_image_crop": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "approval_required": {
+          "type": "boolean"
+        },
+        "expected_change_region": {
+          "type": "string"
+        },
+        "validation_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "replace_text"
+              }
+            },
+            "required": [
+              "operation"
+            ]
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "target_text"
+                ]
+              },
+              {
+                "required": [
+                  "source_key"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "replace_picture"
+              }
+            },
+            "required": [
+              "operation"
+            ]
+          },
+          "then": {
+            "required": [
+              "asset_path"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "update_chart"
+              }
+            },
+            "required": [
+              "operation"
+            ]
+          },
+          "then": {
+            "required": [
+              "chart_data"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "update_table"
+              }
+            },
+            "required": [
+              "operation"
+            ]
+          },
+          "then": {
+            "required": [
+              "table_cell_updates"
+            ]
+          }
+        }
+      ]
+    },
+    "untouched": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target",
+        "reason"
+      ],
+      "properties": {
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slide_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "object_id": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "render_all_slides": {
+          "type": "boolean",
+          "default": true
+        },
+        "validate_package": {
+          "type": "boolean",
+          "default": true
+        },
+        "compare_untouched_parts": {
+          "type": "boolean",
+          "default": true
+        },
+        "check_text_overflow": {
+          "type": "boolean",
+          "default": true
+        },
+        "validate_chart_data": {
+          "type": "boolean",
+          "default": true
+        },
+        "validate_visible_metrics": {
+          "type": "boolean",
+          "default": true
+        },
+        "check_visual_drift": {
+          "type": "boolean",
+          "default": true
+        },
+        "check_editability": {
+          "type": "boolean",
+          "default": true
+        },
+        "require_human_review": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  }
+}
