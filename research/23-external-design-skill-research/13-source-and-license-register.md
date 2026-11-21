@@ -1,0 +1,44 @@
+# 13 — Source, Provenance and License Register
+
+> Snapshot date: 21 November 2026. Repository licenses below were recorded from the pinned revisions listed in the research README. This is an engineering provenance register, not legal advice.
+
+## Pinned repositories
+
+| Source repository | Pinned commit | Root license recorded | Research file |
+|---|---|---|---|
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/f6b76575f949707b4e3c37cd86cb44b0b98643e8) | `f6b76575f949707b4e3c37cd86cb44b0b98643e8` | MIT | [01](01-taste-skill.md) |
+| [nexu-io/open-design](https://github.com/nexu-io/open-design/tree/e033aad1d15a9d4084316e5223f2c6597fd32619) | `e033aad1d15a9d4084316e5223f2c6597fd32619` | Apache-2.0 | [02](02-open-design.md) |
+| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design/tree/d74d8c2d0c78a9e1efd43137f6a9a51182a8b5f0) | `d74d8c2d0c78a9e1efd43137f6a9a51182a8b5f0` | MIT | [03](03-diagram-design.md) |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/2de1134dc4d1cfe112934611ae5803ae17a1bd7e) | `2de1134dc4d1cfe112934611ae5803ae17a1bd7e` | MIT | [04](04-ui-ux-pro-max.md) |
+| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills/tree/62fdcd679747aca0792e5dd6591b10ddfad56825) | `62fdcd679747aca0792e5dd6591b10ddfad56825` | Apache-2.0 | [05](05-stitch-skills.md) |
+| [bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills/tree/f631a09b4fcc0166f2e2c1a8c81906ef680c57e8) | `f631a09b4fcc0166f2e2c1a8c81906ef680c57e8` | MIT | [06](06-awesome-design-skills.md) |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills/tree/64eb3deb9a5fbfa041faf783e0bc3fd635872e9c) | `64eb3deb9a5fbfa041faf783e0bc3fd635872e9c` | MIT | [07](07-emilkowalski-skills.md) |
+| [owl-listener/designer-skills](https://github.com/owl-listener/designer-skills/tree/9a6930cf84a822eb458624bd11c61aac5bbdf224) | `9a6930cf84a822eb458624bd11c61aac5bbdf224` | MIT | [08](08-designer-skills.md) |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills/tree/672ae44ace6aaed65b86cbb1e2fd6fbea0e79578) | `672ae44ace6aaed65b86cbb1e2fd6fbea0e79578` | MIT | [09](09-jakubkrehel-skills.md) |
+
+## Evidence and reuse rules
+
+1. A root repository license is not proof that every bundled image, font, icon, model, video, upstream skill, package or third-party template has the same license.
+2. OpenDesign and Stitch Skills are recorded as Apache-2.0 at the pinned revisions; the other seven are recorded as MIT. Re-check the exact LICENSE file and any subdirectory notices before copying code.
+3. Some repositories contain catalogue entries that point to upstream projects. The catalogue author's license does not automatically relicense the upstream project.
+4. Preserve required copyright, attribution, NOTICE files and license texts when redistributing covered material.
+5. Prefer learning from documented ideas and independently implementing the behavior. Do not copy large blocks of skill prose or assets into our repository without checking permission and attribution requirements.
+6. Record source URL, commit SHA, file path, retrieval date, license, asset origin and modifications for any reused material.
+7. For generated images, retain provider/model, prompt or brief, generation date, source asset references and any applicable provider terms.
+
+## Provenance labels used in this research
+
+- **Observed in source:** directly visible in a pinned source file or tree.
+- **Repository claim:** described by the repository, not independently run.
+- **Inferred workflow:** reconstructed from several files.
+- **Recommendation:** proposed for Legend-Level PPT Skills.
+- **Unverified:** requires execution, current documentation or legal review.
+
+## Refresh procedure
+
+Before a new release:
+1. Fetch the latest commit SHA for each upstream repository.
+2. Rebuild the recursive tree and regenerate `catalogs/external-skill-path-index.json`.
+3. Recheck the root and relevant subdirectory licenses.
+4. Compare skill inventories and inspect changed files.
+5. Update the research snapshot date and note material changes.
