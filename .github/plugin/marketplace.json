@@ -1,0 +1,13 @@
+{
+  "name": "legend-level-ppt",
+  "plugins": [
+    {
+      "name": "legend-level-ppt",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ranjiths112007/Legent-Level-PPT-skills.git",
+        "ref": "main"
+      }
+    }
+  ]
+}
