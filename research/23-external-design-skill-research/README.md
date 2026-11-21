@@ -1,12 +1,12 @@
 # External Design Skill Repository Research
 
-**Thirteen repositories. A cross-referenced engineering handbook for design intelligence, visual systems, image creation, diagrams, motion, presentation craft and native PowerPoint engineering.**
+**Nineteen repositories. A cross-referenced engineering handbook for design intelligence, visual systems, image creation, diagrams, motion, presentation craft and native PowerPoint engineering.**
 
 > Snapshot: 21 November 2026. Research is pinned to exact commit revisions. This is documentation and source-code inspection, not a controlled performance benchmark.
 
 ## What is included
 
-This knowledge base studies nine repositories supplied for Legend-Level PPT Skills. It explains each repository's purpose, internal architecture, skill families, actual workflows, frameworks and libraries, tools, assets, limitations, and what can be adapted to a professional AI presentation system.
+This knowledge base covers the original nine design repositories, four additional presentation-engine repositories and six motion-design repositories supplied for Legend-Level PPT Skills. It explains each repository's purpose, internal architecture, skill families, actual workflows, frameworks and libraries, tools, assets, limitations, and what can be adapted to a professional AI presentation system.
 
 | Repository | Main area | Snapshot inventory |
 |---|---|---:|
@@ -23,6 +23,12 @@ This knowledge base studies nine repositories supplied for Legend-Level PPT Skil
 | [zarazhangrui/frontend-slides](15-frontend-slides.md) | HTML slide creation, visual style previews, progressive template discovery and PPTX extraction | 34 bold template systems |
 | [Akxan/ppt-agent-skill](16-ppt-agent-skill.md) | Research-first deck pipeline, 26 styles, semantic layouts and HTML→SVG→PPTX | 18 chart types; 10 layout families |
 | [proyecto26/slides-ai-plugin](17-slides-ai-plugin.md) | Multi-format slide planner, PptxGenJS backend, reusable TypeScript helpers and QA hooks | 12 theme presets; HTML + PPTX |
+| [greensock/gsap-skills](19-gsap-skills.md) | Official GSAP agent guidance for timelines, plugins, SVG and framework lifecycles | 8 skills; 44 files |
+| [remotion-dev/skills](20-remotion-skills.md) | Frame-deterministic React video composition, rendering, maps and media | 13 skills; 265 files |
+| [LottieFiles/motion-design-skill](21-lottiefiles-motion-design-skill.md) | Technology-agnostic motion direction, timing, easing and choreography | 1 main skill; 21 files |
+| [iart-ai/motion-skills](22-iart-motion-skills.md) | Hub for data-animation, motion-design and explainer-video skill packs | 56 skills claimed across 19 packs; 3 linked packs inspected |
+| [C-Jeril/framer-motion-skills](23-framer-motion-skills.md) | React variants, gestures, scroll and layout animation guidance | 6 skills; 24 files |
+| [frankxai/awesome-motion-design-agent-skills](24-awesome-motion-design-agent-skills.md) | Motion runtime routing, generative media direction and evidence-based QA | 5 skills; 65 files |
 
 ## Main findings
 
@@ -38,7 +44,7 @@ This knowledge base studies nine repositories supplied for Legend-Level PPT Skil
 
 Start with [00-ai-reading-guide.md](00-ai-reading-guide.md), then read the repository deep dives (01–09). The implementation decision documents are [10-cross-repository-patterns.md](10-cross-repository-patterns.md), [11-frameworks-libraries-tools.md](11-frameworks-libraries-tools.md), [12-what-to-adopt-for-ppt.md](12-what-to-adopt-for-ppt.md), and [13-source-and-license-register.md](13-source-and-license-register.md).
 
-For a programmatic inventory of checked SKILL.md files in the original nine design repositories, see catalogs/external-skill-path-index.json. The four presentation-specific repositories were added in the second batch and are documented separately.
+For a programmatic inventory of checked SKILL.md files in the original nine design repositories, see catalogs/external-skill-path-index.json. The four presentation-specific repositories were added in the second batch. Six motion-design repositories were added in the third batch.
 
 ## Second-batch synthesis
 
@@ -73,3 +79,20 @@ Read [18-four-repo-comparative-synthesis.md](18-four-repo-comparative-synthesis.
 - Code, visual assets, fonts, image packs, templates and embedded dependencies may carry different licenses from the repository's root license.
 - “Open source” does not automatically mean every third-party asset or model output is free for every commercial use.
 - No quality ranking is asserted without a controlled, same-input benchmark.
+
+## Motion and video synthesis
+
+Read [25-six-motion-repo-comparative-synthesis.md](25-six-motion-repo-comparative-synthesis.md) for the side-by-side comparison and PPT recommendations. Main conclusion: motion principles and choreography transfer well; GSAP and Framer Motion are browser runtimes; Remotion produces video; Lottie is a vector-media route; none replaces the native PowerPoint animation engine.
+
+The submitted GSAP, Remotion, LottieFiles, Framer Motion and FrankX repositories contain 33 SKILL.md files in total. The iArt hub has no SKILL.md files of its own: its README advertises 56 skills across 19 separately installable packs. Three relevant linked packs were inspected, containing 17 skill documents in total; selected files were read in depth. These counts are inventories, not execution benchmarks.
+
+## Six additional pinned motion repositories
+
+| Repository | Pinned revision | License recorded |
+|---|---|---|
+| [greensock/gsap-skills](https://github.com/greensock/gsap-skills/tree/aed9cfd3277740755f6bfc1155c7aa645403b760) | aed9cfd3277740755f6bfc1155c7aa645403b760 | MIT |
+| [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/6f55706d1069e512430582ad86e4e57dc07afe1b) | 6f55706d1069e512430582ad86e4e57dc07afe1b | No standalone root license found; Remotion runtime is under proprietary Remotion License |
+| [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill/tree/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb) | d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb | MIT |
+| [iart-ai/motion-skills](https://github.com/iart-ai/motion-skills/tree/e8ba1f4eb2bcca3d1639d7545b9cd2bcfe4a3c6f) | e8ba1f4eb2bcca3d1639d7545b9cd2bcfe4a3c6f | MIT |
+| [C-Jeril/framer-motion-skills](https://github.com/C-Jeril/framer-motion-skills/tree/837d7268fc4a3cf5b1f8904616ec97c7485e3eda) | 837d7268fc4a3cf5b1f8904616ec97c7485e3eda | MIT |
+| [frankxai/awesome-motion-design-agent-skills](https://github.com/frankxai/awesome-motion-design-agent-skills/tree/e7dc6e2e728c918ffcea5edb2d7c94e2a6f7785d) | e7dc6e2e728c918ffcea5edb2d7c94e2a6f7785d | CC0-1.0 |
