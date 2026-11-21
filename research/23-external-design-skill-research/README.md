@@ -32,7 +32,7 @@ This knowledge base studies nine repositories supplied for Legend-Level PPT Skil
 
 ## AI reading order
 
-Start with 00-ai-reading-guide.md, then read the repository deep dives. The cross-repository synthesis, framework/tool reference and PPT adoption plan are the implementation decision documents.
+Start with [00-ai-reading-guide.md](00-ai-reading-guide.md), then read the repository deep dives (01–09). The implementation decision documents are [10-cross-repository-patterns.md](10-cross-repository-patterns.md), [11-frameworks-libraries-tools.md](11-frameworks-libraries-tools.md), [12-what-to-adopt-for-ppt.md](12-what-to-adopt-for-ppt.md), and [13-source-and-license-register.md](13-source-and-license-register.md).
 
 For a programmatic inventory of checked SKILL.md files, see catalogs/external-skill-path-index.json.
 
