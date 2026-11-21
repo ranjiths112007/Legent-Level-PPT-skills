@@ -1,19 +1,12 @@
 # Asset Management, Cropping, and Placement
 
-**Status:** Engineering reference  
-**Last reviewed:** 2026-11-21
+Store asset ID/path, source/provider, license, generation status, model/version, prompt/settings, dimensions/format, file size/hash, alt text, placements and crop metadata.
 
-Store asset ID/path, source/provider, license/permission, generation status, model/version, prompt/settings, dimensions/format, file size/hash, alt text, slide placements and crop metadata.
+Aspect handling:
+- **Contain:** preserve full image; empty area possible.
+- **Cover/crop:** fill target; may trim content.
+- **Native size:** only when appropriate.
 
-## Aspect ratio
-- **Contain:** preserve full image, possible empty area.
-- **Cover/crop:** fill region, may trim content.
-- **Native size:** use only where appropriate.
+Calculate visible crop and inspect subject; center crop is not always correct. Use enough pixels for final displayed size; upscaling does not guarantee detail recovery. Balance size and clarity.
 
-Calculate the visible crop and inspect the subject. Center crop is not always correct.
-
-## Resolution
-Use enough pixels for final displayed size. Upscaling does not guarantee detail recovery. Balance file size and clarity.
-
-## Transparency and vectors
-Transparent PNG/WebP can be useful for cutouts; verify alpha survives writer and renderer. SVG is useful for icons and diagrams but requires target-app compatibility testing.
+Transparent PNG/WebP can help cutouts; verify alpha survives writer and renderer. SVG is useful for icons/diagrams but requires target-app compatibility testing.
