@@ -15,6 +15,10 @@
 | [emilkowalski/skills](https://github.com/emilkowalski/skills/tree/64eb3deb9a5fbfa041faf783e0bc3fd635872e9c) | `64eb3deb9a5fbfa041faf783e0bc3fd635872e9c` | MIT | [07](07-emilkowalski-skills.md) |
 | [owl-listener/designer-skills](https://github.com/owl-listener/designer-skills/tree/9a6930cf84a822eb458624bd11c61aac5bbdf224) | `9a6930cf84a822eb458624bd11c61aac5bbdf224` | MIT | [08](08-designer-skills.md) |
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills/tree/672ae44ace6aaed65b86cbb1e2fd6fbea0e79578) | `672ae44ace6aaed65b86cbb1e2fd6fbea0e79578` | MIT | [09](09-jakubkrehel-skills.md) |
+| [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master/tree/63a03673d5c3c928e7f52983a2c8ec65bac30002) | `63a03673d5c3c928e7f52983a2c8ec65bac30002` | MIT | [14](14-ppt-master.md) |
+| [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides/tree/9906a34d640d2111f724544cbc50f7f130569ae1) | `9906a34d640d2111f724544cbc50f7f130569ae1` | MIT | [15](15-frontend-slides.md) |
+| [Akxan/ppt-agent-skill](https://github.com/Akxan/ppt-agent-skill/tree/e2f97f46a2f92633d3f9b95a1a61b0a668c704b3) | `e2f97f46a2f92633d3f9b95a1a61b0a668c704b3` | MIT | [16](16-ppt-agent-skill.md) |
+| [proyecto26/slides-ai-plugin](https://github.com/proyecto26/slides-ai-plugin/tree/1f8505f3a89e6cafd863ebbd0ed8b465db4f3820) | `1f8505f3a89e6cafd863ebbd0ed8b465db4f3820` | MIT | [17](17-slides-ai-plugin.md) |
 
 ## Evidence and reuse rules
 
