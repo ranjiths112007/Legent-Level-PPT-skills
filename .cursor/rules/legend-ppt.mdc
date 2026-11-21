@@ -1,0 +1,15 @@
+---
+description: Legend-Level PowerPoint engineering. Enforces native OOXML objects, template preservation, action titles, and visual QA.
+globs: **/*.pptx, **/*.potx, **/slides/**, **/presentations/**
+alwaysApply: false
+---
+
+# Legend-Level PPT Engineering Rules
+
+When generating, modifying, or reviewing PowerPoint presentations or slide-related scripts:
+
+- **Editability First:** Ensure all shapes, text runs, tables, and charts are native PowerPoint elements (`presentationML`). Never flatten slides into full-bleed background images.
+- **Action Titles:** Use insight-driven action titles for every slide (e.g. "Gross Margin Rose 420 bps").
+- **Reference Preservation:** When updating an existing deck, perform in-place surgical edits on target shapes. Never overwrite master slides, corporate themes, or non-target slides.
+- **Dual-Lane Assets:** Use vector shapes or native charts for structured data and metrics. Use raster images strictly for photography or hero concepts. Never put text or numbers inside generated bitmap images.
+- **Visual QA:** Inspect rendered output for bounding box overflows, text collisions, and contrast failures before considering the task complete.
