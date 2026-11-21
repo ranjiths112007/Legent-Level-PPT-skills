@@ -124,6 +124,7 @@ Approved SlidePlan + DesignSystem
    Editable slide objects Browser QA       MP4/GIF QA
           |                  |                  |
           +--------- Shared QA / evidence ------+
+```
 
 The motion planner should choose no animation unless motion improves clarity or pacing. Native PowerPoint remains the default backend when users request an editable PPTX.
 
