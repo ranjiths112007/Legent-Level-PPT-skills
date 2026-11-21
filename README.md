@@ -100,13 +100,13 @@ This research separates Claude for PowerPoint, Claude Slides, Claude Design and 
 
 ## External design-skill repository research
 
-23. [Nine-repository research handbook](research/23-external-design-skill-research/README.md)
+23. [Nineteen-repository research handbook](research/23-external-design-skill-research/README.md)
 24. [Cross-repository patterns](research/23-external-design-skill-research/10-cross-repository-patterns.md)
 25. [Frameworks, libraries and tools map](research/23-external-design-skill-research/11-frameworks-libraries-tools.md)
 26. [What to adopt for our PPT system](research/23-external-design-skill-research/12-what-to-adopt-for-ppt.md)
 27. [Source and license register](research/23-external-design-skill-research/13-source-and-license-register.md)
 
-The handbook examines nine pinned design-skill repositories, inventories 807 `SKILL.md` paths, and separates transferable design workflows from web-only or non-native-PowerPoint implementations.
+The design-skill handbook inventories 807 `SKILL.md` paths across the first nine repositories. The wider research now covers 19 repositories, including presentation engines and motion/video systems; each is separated by what it can actually generate or edit.
 
 
 ### Additional presentation-engine research
@@ -118,3 +118,16 @@ The handbook examines nine pinned design-skill repositories, inventories 807 `SK
 - [Four-repository comparative synthesis](research/23-external-design-skill-research/18-four-repo-comparative-synthesis.md)
 
 The external repository handbook now covers 13 repositories in total.
+
+
+### Motion design and video research
+
+- [GSAP Skills deep dive](research/23-external-design-skill-research/19-gsap-skills.md)
+- [Remotion Skills deep dive](research/23-external-design-skill-research/20-remotion-skills.md)
+- [LottieFiles Motion Design Skill deep dive](research/23-external-design-skill-research/21-lottiefiles-motion-design-skill.md)
+- [iArt Motion Skills collection deep dive](research/23-external-design-skill-research/22-iart-motion-skills.md)
+- [Framer Motion Skills deep dive](research/23-external-design-skill-research/23-framer-motion-skills.md)
+- [Awesome Motion Design Agent Skills deep dive](research/23-external-design-skill-research/24-awesome-motion-design-agent-skills.md)
+- [Six-repository motion synthesis and PPT adaptation](research/23-external-design-skill-research/25-six-motion-repo-comparative-synthesis.md)
+
+The motion research distinguishes browser animation, deterministic video, Lottie media and native PowerPoint animation. These are separate output technologies, not interchangeable implementations.
