@@ -1,39 +1,17 @@
 # Color Theory and Palette Engineering
 
-**Status:** Reference  
-**Last reviewed:** 2026-11-21
+**Status:** Reference · **Last reviewed:** 2026-11-21
 
-## Semantic roles
+Define semantic roles: background, surface, text, primary/secondary brand, accent, positive/warning/negative, chart series, borders and dividers.
 
-Background, surface, primary/secondary text, primary brand, secondary brand, accent, positive/warning/negative status, chart series, borders/dividers.
+Color models: HEX/RGB for digital use; HSL/HSV for intuitive controls but not perceptually uniform; CIELAB/LCH for perceptual relationships; CMYK for print workflows.
 
-## Color models
+Palette strategies: monochromatic, analogous, complementary, split-complementary and triadic. Usually establish one dominant color and restrained accents.
 
-- HEX/RGB: common digital representation.
-- HSL/HSV: intuitive hue/saturation/lightness controls, not perceptually uniform.
-- CIELAB/LCH: useful for perceptual relationships.
-- CMYK: print-oriented; does not replace screen checks.
+For charts, keep series mappings stable. Do not rely on color alone; add labels, symbols or patterns. Use sequential palettes for ordered magnitude, diverging palettes around meaningful midpoints, and categorical palettes for distinct groups.
 
-## Palette strategies
+Failures: accents everywhere, low contrast, too many unrelated colors, inconsistent series mappings, similar series colors, unintended cultural/status associations.
 
-Monochromatic; analogous; complementary; split-complementary; triadic. Usually choose one dominant role and restrain accents.
+Checklist: measure contrast for expected display; do not encode status only with color; distinguish categories; keep palette consistent; define semantic roles; consider grayscale/print; verify brand colors from an authoritative source.
 
-## Charts
-
-Use stable series colors. Do not rely on color alone; add labels, symbols or patterns. Avoid red/green as the only distinction. Use sequential palettes for ordered magnitude, diverging for values around a meaningful midpoint, and categorical palettes for distinct groups.
-
-## Common failures
-
-Accent everywhere; low text/background contrast; too many unrelated colors; inconsistent series mapping; similar series colors; unintended cultural/status associations.
-
-## Validation
-
-- [ ] Contrast checked for intended viewing conditions.
-- [ ] Status not communicated by color alone.
-- [ ] Chart categories distinguishable.
-- [ ] Palette consistent.
-- [ ] Semantic color roles defined.
-- [ ] Grayscale/print considered where relevant.
-- [ ] Brand colors taken from an authoritative source.
-
-WCAG is a web standard; it can inform contrast practice but is not a complete presentation-viewing standard. See sources.
+WCAG is a web standard; its contrast guidance is useful but is not a complete presentation-display standard. See source register.
