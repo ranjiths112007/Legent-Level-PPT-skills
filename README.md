@@ -96,3 +96,14 @@ This capability is designed for users who upload an existing deck and want new i
 22. [What we should adopt from Claude](research/22-methods-to-adopt-from-claude.md)
 
 This research separates Claude for PowerPoint, Claude Slides, Claude Design and the public PPTX skill; documents design systems, slide planning, native charts/diagrams, image-generation limitations, integrations and quality assurance.
+
+
+## External design-skill repository research
+
+23. [Nine-repository research handbook](research/23-external-design-skill-research/README.md)
+24. [Cross-repository patterns](research/23-external-design-skill-research/10-cross-repository-patterns.md)
+25. [Frameworks, libraries and tools map](research/23-external-design-skill-research/11-frameworks-libraries-tools.md)
+26. [What to adopt for our PPT system](research/23-external-design-skill-research/12-what-to-adopt-for-ppt.md)
+27. [Source and license register](research/23-external-design-skill-research/13-source-and-license-register.md)
+
+The handbook examines nine pinned design-skill repositories, inventories 807 `SKILL.md` paths, and separates transferable design workflows from web-only or non-native-PowerPoint implementations.
