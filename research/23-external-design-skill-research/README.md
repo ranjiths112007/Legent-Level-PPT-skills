@@ -1,6 +1,6 @@
 # External Design Skill Repository Research
 
-**Nine repositories. A cross-referenced engineering handbook for design intelligence, visual systems, image creation, diagrams, motion, presentation craft and agent workflows.**
+**Thirteen repositories. A cross-referenced engineering handbook for design intelligence, visual systems, image creation, diagrams, motion, presentation craft and native PowerPoint engineering.**
 
 > Snapshot: 21 November 2026. Research is pinned to exact commit revisions. This is documentation and source-code inspection, not a controlled performance benchmark.
 
@@ -19,6 +19,10 @@ This knowledge base studies nine repositories supplied for Legend-Level PPT Skil
 | [emilkowalski/skills](07-emilkowalski-skills.md) | Motion design, interaction, performance, animation review and design engineering | 36 files; 20 skills |
 | [designer-skills](08-designer-skills.md) | Research, strategy, design systems, interaction, UI, prototyping, operations and critique | 205 files; 111 skill documents |
 | [jakubkrehel/skills](09-jakubkrehel-skills.md) | Strict interface quality, typography, colour, layout, accessibility, motion and variants | 90 files; 16 skills |
+| [hugohe3/ppt-master](14-ppt-master.md) | Native PowerPoint generation/editing, constrained SVG IR, OOXML, template preservation and QA | Large Python/OOXML toolchain |
+| [zarazhangrui/frontend-slides](15-frontend-slides.md) | HTML slide creation, visual style previews, progressive template discovery and PPTX extraction | 34 bold template systems |
+| [Akxan/ppt-agent-skill](16-ppt-agent-skill.md) | Research-first deck pipeline, 26 styles, semantic layouts and HTML→SVG→PPTX | 18 chart types; 10 layout families |
+| [proyecto26/slides-ai-plugin](17-slides-ai-plugin.md) | Multi-format slide planner, PptxGenJS backend, reusable TypeScript helpers and QA hooks | 12 theme presets; HTML + PPTX |
 
 ## Main findings
 
@@ -34,7 +38,11 @@ This knowledge base studies nine repositories supplied for Legend-Level PPT Skil
 
 Start with [00-ai-reading-guide.md](00-ai-reading-guide.md), then read the repository deep dives (01–09). The implementation decision documents are [10-cross-repository-patterns.md](10-cross-repository-patterns.md), [11-frameworks-libraries-tools.md](11-frameworks-libraries-tools.md), [12-what-to-adopt-for-ppt.md](12-what-to-adopt-for-ppt.md), and [13-source-and-license-register.md](13-source-and-license-register.md).
 
-For a programmatic inventory of checked SKILL.md files, see catalogs/external-skill-path-index.json.
+For a programmatic inventory of checked SKILL.md files in the original nine design repositories, see catalogs/external-skill-path-index.json. The four presentation-specific repositories were added in the second batch and are documented separately.
+
+## Second-batch synthesis
+
+Read [18-four-repo-comparative-synthesis.md](18-four-repo-comparative-synthesis.md) for the side-by-side comparison and recommended architecture. Main conclusion: PPT Master is the strongest native PowerPoint engineering reference; Frontend Slides is strongest for visual style discovery; PPT Agent Skill contributes a content-driven visual grammar and SVG conversion route; Slides AI Plugin contributes a compact multi-renderer architecture.
 
 ## The nine pinned source revisions
 
