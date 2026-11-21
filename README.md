@@ -81,3 +81,11 @@ Research text and original materials are licensed under the MIT License unless o
 17. [External skill source register](research/18-skill-source-register.md)
 
 These reviews are documentation-based as of 2026-11-21, not controlled output benchmarks. Read the limitations before treating any conditional winner as objectively best.
+
+## Reference-based PPT editing
+
+18. [Deep research: reference-based PowerPoint recreation and data replacement](research/19-reference-based-ppt-recreation.md)
+19. [Operational workflow and engineering contract](research/20-reference-deck-workflow-spec.md)
+20. [Reference edit manifest JSON Schema](schemas/reference-edit-manifest.schema.json)
+
+This capability is designed for users who upload an existing deck and want new information inserted while its original structure and styling are preserved. It prioritizes minimal native-object edits, a change manifest, rendering, data validation and visual QA.
