@@ -89,3 +89,10 @@ These reviews are documentation-based as of 2026-11-21, not controlled output be
 20. [Reference edit manifest JSON Schema](schemas/reference-edit-manifest.schema.json)
 
 This capability is designed for users who upload an existing deck and want new information inserted while its original structure and styling are preserved. It prioritizes minimal native-object edits, a change manifest, rendering, data validation and visual QA.
+
+## Claude presentation workflow research
+
+21. [Deep research: how Claude creates presentations, designs and visual assets](research/21-claude-presentation-workflow-research.md)
+22. [What we should adopt from Claude](research/22-methods-to-adopt-from-claude.md)
+
+This research separates Claude for PowerPoint, Claude Slides, Claude Design and the public PPTX skill; documents design systems, slide planning, native charts/diagrams, image-generation limitations, integrations and quality assurance.
