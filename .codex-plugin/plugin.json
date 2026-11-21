@@ -1,0 +1,27 @@
+{
+  "name": "legend-level-ppt",
+  "version": "1.0.0",
+  "description": "Deterministic PowerPoint engineering for AI agents with native OOXML objects, template preservation, and visual QA.",
+  "author": {
+    "name": "Ranjith S",
+    "url": "https://github.com/ranjiths112007"
+  },
+  "homepage": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+  "repository": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Legend-Level PPT Skills",
+    "shortDescription": "Deterministic PowerPoint generation & surgical editing",
+    "longDescription": "Produce real editable PowerPoint presentations with native charts, tables, and shapes. In-place template preservation and automated visual QA.",
+    "developerName": "Ranjith S",
+    "category": "Productivity",
+    "capabilities": ["Instructions", "Skill Execution"],
+    "websiteURL": "https://github.com/ranjiths112007/Legent-Level-PPT-skills",
+    "defaultPrompt": [
+      "Create a 10-slide presentation from this outline with native editable charts.",
+      "Update my monthly business review deck with this Excel sheet while preserving design.",
+      "Run visual QA linting on this PowerPoint deck."
+    ]
+  }
+}
